@@ -1,0 +1,59 @@
+object Form1: TForm1
+  Left = 492
+  Height = 435
+  Top = 109
+  Width = 594
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Tutorials 19: Basic pixel'
+  ClientHeight = 435
+  ClientWidth = 594
+  OnActivate = FormActivate
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnKeyDown = FormKeyDown
+  OnKeyUp = FormKeyUp
+  LCLVersion = '1.4.2.0'
+  object PaintBox2: TPaintBox
+    Left = 8
+    Height = 344
+    Top = 72
+    Width = 576
+    OnMouseDown = PaintBox2MouseDown
+    OnMouseUp = PaintBox2MouseUp
+  end
+  object Label3: TLabel
+    Left = 296
+    Height = 16
+    Top = 0
+    Width = 125
+    Caption = 'Tutorials 19: Basic pixel'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Arial Narrow'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Button1: TButton
+    Left = 24
+    Height = 38
+    Top = 24
+    Width = 88
+    Caption = 'Enable H.Cos'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Button2: TButton
+    Left = 124
+    Height = 36
+    Top = 25
+    Width = 127
+    Caption = 'Enable Triangle'
+    OnClick = Button2Click
+    TabOrder = 1
+  end
+end
