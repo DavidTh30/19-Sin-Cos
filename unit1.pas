@@ -190,9 +190,6 @@ procedure TForm1.Main_Loop();
 var
   Frame_, Line_, Line_Frame:integer;
   x_,y_,t:Float;
-  i:integer;
-  OP,AD,DE:Extended;
-  New_pt, pt:TPointF;
 
 begin
   if Not Run_ then
@@ -336,8 +333,8 @@ begin
 
       if Tem.FPie then
       begin
-        if T>0 then Tem.bmp.Arc(Tem.Position.x,Tem.Position.y,20,20,(2*pi),T,BGRA(190,35,18,1255),1,False,BGRA(0,0,0,0));
-        if T<=0 then Tem.bmp.Arc(Tem.Position.x,Tem.Position.y,20,20,(2*pi),T+(pi/181),BGRA(190,35,18,1255),1,False,BGRA(0,0,0,0));
+        if T>0 then Tem.bmp.Arc(Tem.Position.x,Tem.Position.y,20,20,(2*pi),T,BGRA(190,35,18,255),1,False,BGRA(0,0,0,0));
+        if T<=0 then Tem.bmp.Arc(Tem.Position.x,Tem.Position.y,20,20,(2*pi),T+(pi/181),BGRA(190,35,18,255),1,False,BGRA(0,0,0,0));
         if T>0 then Tem.bmp.FillPie(Tem.Position.x,Tem.Position.y,20,20,(2*pi),T,BGRA(190,5,18,100));
         if T<=0 then Tem.bmp.FillPie(Tem.Position.x,Tem.Position.y,20,20,(2*pi),T+(pi/181),BGRA(190,5,18,100));
       end
